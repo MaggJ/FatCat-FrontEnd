@@ -1,0 +1,43 @@
+.cat-header-container {
+  background-color: @white;
+  height: 40px;
+  line-height: 40px;
+  display: flex;
+  padding: 0 50px;
+
+  .cat-header-logo {
+    color: #333;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .cat-header-nav {
+    flex: 1;
+    .cat-header-nav-list {
+      display: flex;
+      margin-left: 50px;
+      .cat-header-nav-list-item {
+        margin-left: 20px;
+        color: #333;
+        cursor: pointer;
+        transition: .2s;
+        font-weight: 600;
+        &:hover {
+          color: @second-color;
+        }
+      }
+    }
+  }
+
+  .cat-header-user {
+    color: #333;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .2s;
+
+    &:hover {
+      color: @second-color;
+    }
+  }
+}
